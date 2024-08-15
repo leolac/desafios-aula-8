@@ -1,0 +1,50 @@
+# Desafio 1
+nomedeusuario = input('Digite um nome de usuário: ')
+senha = input('Digite uma senha: ')
+
+produtos = ['camiseta', 'calça', 'sapatos']
+preços = [30, 20, 45]
+total = 0
+dinheiro = 100
+carrinho = []
+
+resposta = int(input((f'''Escolha o número do produto que você deseja comprar, ou 0 para nenhum:
+[1] Camiseta -- R$ 30,00
+[2] Calça    -- R$ 20,00
+[3] Sapatos  -- R$ 45,00
+''')))
+
+if resposta != 0:
+    carrinho.append(produtos[resposta - 1])
+    total += preços[resposta - 1]
+print('O seu carrinho possui:', carrinho, 'E o total de dinheiro gasto é:', total)
+
+resposta = int(input((f'''Você pode fazer outra compra.
+Escolha o número do produto que você deseja comprar, ou 0 para nenhum:
+[1] Camiseta -- R$ 30,00
+[2] Calça    -- R$ 20,00
+[3] Sapatos  -- R$ 45,00
+''')))
+
+if resposta != 0:
+    carrinho.append(produtos[resposta - 1])
+    total += preços[resposta - 1]
+print('O seu carrinho possui:', carrinho, 'E o total de dinheiro gasto é:', total)
+
+resposta = int(input((f'''Você pode fazer outra compra.
+Escolha o número do produto que você deseja comprar, ou 0 para nenhum:
+[1] Camiseta -- R$ 30,00
+[2] Calça    -- R$ 20,00
+[3] Sapatos  -- R$ 45,00
+''')))
+
+if resposta != 0:
+    carrinho.append(produtos[resposta - 1])
+    total += preços[resposta - 1]
+print('O seu carrinho possui:', carrinho, 'E o total de dinheiro gasto é:', total)
+
+resposta = print('Deseja pagar?')
+if resposta == 'sim':
+    dinheiro -= total
+else:
+    print('Compra abandonada.')
