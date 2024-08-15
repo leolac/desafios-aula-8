@@ -1,0 +1,38 @@
+# Desafio 2
+nomes = []
+idades = []
+quartos = [0, 0, 0]
+valores = [100, 150, 250]
+totais = [0, 0, 0]
+nomes.append(input('Registre o nome do primeiro cliente. '))
+idades.append(int(input('Registre a idade do primeiro cliente ')))
+
+nomes.append(input('Registre o nome do segundo cliente. '))
+idades.append(int(input('Registre a idade do segundo cliente ')))
+
+nomes.append(input('Registre o nome do terceiro cliente. '))
+idades.append(int(input('Registre a idade do terceiro cliente ')))
+
+quartos[0] = int(input((f'''Escolha um tipo de quarto para o primeiro cliente através do número..
+[1] Simples -- R$ 100,00 por dia.
+[2] Duplo    -- R$ 150,00 por dia.
+[3] Luxo  -- R$ 250,00 por dia.
+''')))
+
+quartos[1] = int(input((f'''Escolha um tipo de quarto para o primeiro cliente através do número..
+[1] Simples -- R$ 100,00 por dia.
+[2] Duplo    -- R$ 150,00 por dia.
+[3] Luxo  -- R$ 250,00 por dia.
+''')))
+
+quartos[2] = int(input((f'''Escolha um tipo de quarto para o primeiro cliente através do número..
+[1] Simples -- R$ 100,00 por dia.
+[2] Duplo    -- R$ 150,00 por dia.
+[3] Luxo  -- R$ 250,00 por dia.
+''')))
+
+totais[0] = valores[0] * int(input('Quantos dias o primeiro cliente vai passar no hotel? '))
+totais[1] = valores[1] * int(input('Quantos dias o segundo cliente vai passar no hotel? '))
+totais[2] = valores[2] * int(input('Quantos dias o terceiro cliente vai passar no hotel? '))
+print('Os valores totais da estadia de cada cliente no hotel são respectivamente', totais)
+
